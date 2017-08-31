@@ -1,1 +1,0 @@
-../syn_rod_bip.mod

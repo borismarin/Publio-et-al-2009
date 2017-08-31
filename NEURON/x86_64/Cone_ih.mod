@@ -1,1 +1,0 @@
-../Cone_ih.mod

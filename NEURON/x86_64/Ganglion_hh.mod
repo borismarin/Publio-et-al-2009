@@ -1,1 +1,0 @@
-../Ganglion_hh.mod
