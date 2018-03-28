@@ -4511,7 +4511,7 @@
 				<location x="1100.0" y="660.0" z="0"/>
 			</instance>
 		</population>
-		<electricalProjection id ="rod_rod_gaps" presynapticPopulation="rods" postsynapticPopulation="rods">
+		<electricalProjection id ="rod_rod_gaps" presynapticPopulation="rods_pop" postsynapticPopulation="rods_pop">
 			<electricalConnectionInstance id="0" preCell="../rods/1/rod" postCell="../rods/2/rod" synapse="rod_rod_gap"/>
 			<electricalConnectionInstance id="1" preCell="../rods/4/rod" postCell="../rods/5/rod" synapse="rod_rod_gap"/>
 			<electricalConnectionInstance id="2" preCell="../rods/6/rod" postCell="../rods/7/rod" synapse="rod_rod_gap"/>
