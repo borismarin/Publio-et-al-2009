@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 ../Schemas/NeuroML2/NeuroML_v2beta4.xsd"
 	id="rods_small">
-	<include href="rod.nml"/>
+	<include href="rod.cell.nml"/>
 
 	<gapJunction id="rod_rod_gap" conductance="0.5nS"/>
 	<pulseGenerator id="pulseGen1" delay="50ms" duration="200ms" amplitude="0.0032nA"/>
