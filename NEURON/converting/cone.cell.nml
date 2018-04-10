@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 ../Schemas/NeuroML2/NeuroML_v2beta4.xsd"
+	id="cone">
+
+
+	<cell id="cone">
+
+		<morphology id="morph1">
+			<segment id="0" name="soma">
+				<proximal x="0" y="0" z="0" diameter="10"/>
+				<!-- L=10/PI -->
+				<distal x="0" y="0" z="3.1830988618" diameter="10"/>
+			</segment>
+
+			<segmentGroup id="soma_group">
+				<member segment="0"/>
+			</segmentGroup>
+
+		</morphology>
+
+		<biophysicalProperties id="bioPhys1">
+
+			<membraneProperties>
+				<specificCapacitance value="16 uF_per_cm2"/>
+				<initMembPotential value="-65mV"/>
+
+			</membraneProperties>
+
+			<intracellularProperties>
+				<resistivity value="35.4 ohm_cm"/>
+			</intracellularProperties>
+
+		</biophysicalProperties>
+
+	</cell>
+
+</neuroml>
+
