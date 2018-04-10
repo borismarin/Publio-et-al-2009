@@ -6075,16 +6075,16 @@
 		</electricalProjection>
 
 		<electricalProjection id ="cones_rods_gap" presynapticPopulation="cones_pop" postsynapticPopulation="rods_pop">
-			<electricalConnectionInstance id="0" preCell="../cones/2/cone" postCell="../rods/1427/rod" synapse="gap"/>
-			<electricalConnectionInstance id="1" preCell="../cones/3/cone" postCell="../rods/171/rod" synapse="gap"/>
-			<electricalConnectionInstance id="2" preCell="../cones/4/cone" postCell="../rods/811/rod" synapse="gap"/>
-			<electricalConnectionInstance id="3" preCell="../cones/6/cone" postCell="../rods/471/rod" synapse="gap"/>
-			<electricalConnectionInstance id="4" preCell="../cones/8/cone" postCell="../rods/208/rod" synapse="gap"/>
-			<electricalConnectionInstance id="5" preCell="../cones/9/cone" postCell="../rods/74/rod" synapse="gap"/>
-			<electricalConnectionInstance id="6" preCell="../cones/11/cone" postCell="../rods/1003/rod" synapse="gap"/>
-			<electricalConnectionInstance id="7" preCell="../cones/12/cone" postCell="../rods/590/rod" synapse="gap"/>
-			<electricalConnectionInstance id="8" preCell="../cones/13/cone" postCell="../rods/1247/rod" synapse="gap"/>
-			<electricalConnectionInstance id="9" preCell="../cones/14/cone" postCell="../rods/1326/rod" synapse="gap"/>
+			<electricalConnectionInstance id="0" preCell="../cones/2/cone" postCell="../rods/1427/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="1" preCell="../cones/3/cone" postCell="../rods/171/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="2" preCell="../cones/4/cone" postCell="../rods/811/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="3" preCell="../cones/6/cone" postCell="../rods/471/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="4" preCell="../cones/8/cone" postCell="../rods/208/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="5" preCell="../cones/9/cone" postCell="../rods/74/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="6" preCell="../cones/11/cone" postCell="../rods/1003/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="7" preCell="../cones/12/cone" postCell="../rods/590/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="8" preCell="../cones/13/cone" postCell="../rods/1247/rod" synapse="cone_rod_gap"/>
+			<electricalConnectionInstance id="9" preCell="../cones/14/cone" postCell="../rods/1326/rod" synapse="cone_rod_gap"/>
 		</electricalProjection>
 
 		<inputList id="bright_current" component="pulseGen1" population="rods">
