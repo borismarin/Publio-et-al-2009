@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 ../Schemas/NeuroML2/NeuroML_v2beta4.xsd"
+	id="rod_bipolar">
+
+	<ionChannel id="leak" conductance="0.5pS" type="ionChannelPassive" species="non_specific"/>
+
+	<cell id="rod_bipolar">
+
+		<morphology id="morph1">
+			<segment id="0" name="soma">
+				<proximal x="0" y="0" z="0" diameter="10"/>
+				<distal x="0" y="0" z="10" diameter="10"/>
+			</segment>
+
+			<segmentGroup id="soma_group">
+				<member segment="0"/>
+			</segmentGroup>
+
+		</morphology>
+
+		<biophysicalProperties id="bioPhys1">
+
+			<membraneProperties>
+				<channelDensity id="leakChans" ionChannel="leak" condDensity="77 S_per_m2" erev="-41 mV" ion="non_specific"/>
+				<specificCapacitance value="1 uF_per_cm2"/>
+				<initMembPotential value="-65mV"/>
+
+			</membraneProperties>
+
+			<intracellularProperties>
+				<resistivity value="35.4 ohm_cm"/>
+			</intracellularProperties>
+
+		</biophysicalProperties>
+
+	</cell>
+
+</neuroml>
+
