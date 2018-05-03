@@ -1,0 +1,45 @@
+<Lems>
+	<ComponentType name="invertingGradedSynapse"
+	                   extends="baseGradedSynapse"
+	                   description="Graded Synapse (sign-inverting), retinal Rod-Bipolar cells. Kinetics described in L.F. Abbott, E. Marder (1998) Modeling Small Networks (In C Koch and I Segev, editors, Methods in Neuronal Modelling)">
+	
+	        <Parameter name="g_max" dimension="conductance" description="Maximum synaptic condutance"/>
+	        <Parameter name="t_syn" dimension="time" description="Time constant for gating kinetics"/>
+	        <Parameter name="v_thresh" dimension="voltage" description="Presynpatic voltage threshold for synapse activation"/>
+	        <Parameter name="v_slope" dimension="voltage" description="Slope of activation curve"/>
+	        <Parameter name="e_rev" dimension="voltage" description="Reversal potential for ions in the  associated ion channel"/>
+
+	        <Exposure name="i" dimension="current"/>
+	        <Exposure name="inf" dimension="none"/>
+	        <Exposure name="tau" dimension="time"/>
+	
+	        <Requirement name="v" dimension="voltage"/>
+	
+	        <InstanceRequirement name="peer" type="gapJunction"/>
+	
+	        <Dynamics>
+	            <StateVariable name="s" dimension="none"/>
+
+	            <DerivedVariable name="vpeer" dimension="voltage" select="peer/v"/>
+	
+	            <ConditionalDerivedVariable name="inf" dimension="none" exposure="inf">
+	                <Case condition="vpeer .geq. v_thresh" value="0"/>
+	                <Case value="tanh((v_thresh-vpeer)/v_slope)"/>
+	            </ConditionalDerivedVariable>
+
+	            <ConditionalDerivedVariable name="tau" dimension="time">
+					<Case condition="1 .eq. 1" value="(1-inf)*t_syn" exposure="tau"/>
+				</ConditionalDerivedVariable>
+
+	            <DerivedVariable name="i" exposure="i"  value="g_max * s * (e_rev-v)"/>
+	
+	            <ConditionalDerivedVariable name="s_rate" dimension="per_time">
+	            	<!-- To catch case where tau ~ 0 => too fast a change in s => numerical instability -->
+	                <Case condition="(1-inf) .gt. 1e-4" value="(inf - s)/tau"/>
+	                <Case value="0"/>
+	            </ConditionalDerivedVariable>
+
+	            <TimeDerivative variable="s" value="s_rate" />
+	        </Dynamics>
+	</ComponentType>
+</Lems>
