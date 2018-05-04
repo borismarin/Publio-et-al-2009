@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 ../Schemas/NeuroML2/NeuroML_v2beta4.xsd"
 	id="rod_bipolar">
 
-	<ionChannel id="leak" conductance="0.5pS" type="ionChannelPassive" species="non_specific"/>
+	<ionChannel id="leak_bip" conductance="0.5pS" type="ionChannelPassive" species="non_specific"/>
 
 	<cell id="rod_bipolar">
 
@@ -24,7 +24,7 @@
 		<biophysicalProperties id="bioPhys1">
 
 			<membraneProperties>
-				<channelDensity id="leakChans" ionChannel="leak" condDensity="77 S_per_m2" erev="-41 mV" ion="non_specific"/>
+				<channelDensity id="leakChans" ionChannel="leak_bip" condDensity="77 S_per_m2" erev="-41 mV" ion="non_specific"/>
 				<specificCapacitance value="1 uF_per_cm2"/>
 				<initMembPotential value="-65mV"/>
 
