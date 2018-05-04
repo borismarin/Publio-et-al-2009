@@ -13,8 +13,7 @@
 	<gapJunction id="cone_rod_gap" conductance="0.2nS"/>
 	<!-- dummy endpoint for graded synapses -->
 	<silentSynapse id="silent"/> 
-	<!--<invertingGradedSynapse id="invGraded" g_max="2.56nS" v_slope="10mV" v_thresh="-44mV" t_syn="10ms" e_rev="0mV"/>-->
-    <gradedSynapse id="invGraded" conductance="5pS" delta="5mV" Vth="-55mV" k="0.025per_ms" erev="0mV"/>
+	<invertingGradedSynapse id="invGraded" g_max="2.56nS" v_slope="10mV" v_thresh="-44mV" t_syn="10ms" e_rev="0mV"/>
 
 	<pulseGenerator id="pulseGen1" delay="50ms" duration="200ms" amplitude="0.0032nA"/>
 
@@ -4524,355 +4523,355 @@
 
 		<population type="populationList" id="cones_pop" component="cone" size="16">
 			<instance id="0">
-				<location x="0.0" y="0.0" z="40"/>
+				<location x="0.0" y="0.0" z="80"/>
 			</instance>
 			<instance id="1">
-				<location x="0.0" y="29.0" z="40"/>
+				<location x="0.0" y="29.0" z="80"/>
 			</instance>
 			<instance id="2">
-				<location x="0.0" y="59.0" z="40"/>
+				<location x="0.0" y="59.0" z="80"/>
 			</instance>
 			<instance id="3">
-				<location x="0.0" y="88.0" z="40"/>
+				<location x="0.0" y="88.0" z="80"/>
 			</instance>
 			<instance id="4">
-				<location x="29.333" y="0.0" z="40"/>
+				<location x="29.333" y="0.0" z="80"/>
 			</instance>
 			<instance id="5">
-				<location x="29.333" y="29.0" z="40"/>
+				<location x="29.333" y="29.0" z="80"/>
 			</instance>
 			<instance id="6">
-				<location x="29.333" y="59.0" z="40"/>
+				<location x="29.333" y="59.0" z="80"/>
 			</instance>
 			<instance id="7">
-				<location x="29.333" y="88.0" z="40"/>
+				<location x="29.333" y="88.0" z="80"/>
 			</instance>
 			<instance id="8">
-				<location x="58.667" y="0.0" z="40"/>
+				<location x="58.667" y="0.0" z="80"/>
 			</instance>
 			<instance id="9">
-				<location x="58.667" y="29.0" z="40"/>
+				<location x="58.667" y="29.0" z="80"/>
 			</instance>
 			<instance id="10">
-				<location x="58.667" y="59.0" z="40"/>
+				<location x="58.667" y="59.0" z="80"/>
 			</instance>
 			<instance id="11">
-				<location x="58.667" y="88.0" z="40"/>
+				<location x="58.667" y="88.0" z="80"/>
 			</instance>
 			<instance id="12">
-				<location x="88.0" y="0.0" z="40"/>
+				<location x="88.0" y="0.0" z="80"/>
 			</instance>
 			<instance id="13">
-				<location x="88.0" y="29.0" z="40"/>
+				<location x="88.0" y="29.0" z="80"/>
 			</instance>
 			<instance id="14">
-				<location x="88.0" y="59.0" z="40"/>
+				<location x="88.0" y="59.0" z="80"/>
 			</instance>
 			<instance id="15">
-				<location x="88.0" y="88.0" z="40"/>
+				<location x="88.0" y="88.0" z="80"/>
 			</instance>
 		</population>
 
 		<population type="populationList" id="rod_bipolars_pop" component="rod_bipolar" size="100">
 			<instance id="0">
-				<location x="0.0" y="0.0" z="40"/>
+				<location x="100.0" y="100.0" z="80"/>
 			</instance>
 			<instance id="1">
-				<location x="0.0" y="24.0" z="40"/>
+				<location x="100.0" y="124.0" z="80"/>
 			</instance>
 			<instance id="2">
-				<location x="0.0" y="49.0" z="40"/>
+				<location x="100.0" y="149.0" z="80"/>
 			</instance>
 			<instance id="3">
-				<location x="0.0" y="73.0" z="40"/>
+				<location x="100.0" y="173.0" z="80"/>
 			</instance>
 			<instance id="4">
-				<location x="0.0" y="98.0" z="40"/>
+				<location x="100.0" y="198.0" z="80"/>
 			</instance>
 			<instance id="5">
-				<location x="0.0" y="122.0" z="40"/>
+				<location x="100.0" y="222.0" z="80"/>
 			</instance>
 			<instance id="6">
-				<location x="0.0" y="147.0" z="40"/>
+				<location x="100.0" y="247.0" z="80"/>
 			</instance>
 			<instance id="7">
-				<location x="0.0" y="171.0" z="40"/>
+				<location x="100.0" y="271.0" z="80"/>
 			</instance>
 			<instance id="8">
-				<location x="0.0" y="196.0" z="40"/>
+				<location x="100.0" y="296.0" z="80"/>
 			</instance>
 			<instance id="9">
-				<location x="0.0" y="220.0" z="40"/>
+				<location x="100.0" y="320.0" z="80"/>
 			</instance>
 			<instance id="10">
-				<location x="24.444" y="0.0" z="40"/>
+				<location x="124.444" y="100.0" z="80"/>
 			</instance>
 			<instance id="11">
-				<location x="24.444" y="24.0" z="40"/>
+				<location x="124.444" y="124.0" z="80"/>
 			</instance>
 			<instance id="12">
-				<location x="24.444" y="49.0" z="40"/>
+				<location x="124.444" y="149.0" z="80"/>
 			</instance>
 			<instance id="13">
-				<location x="24.444" y="73.0" z="40"/>
+				<location x="124.444" y="173.0" z="80"/>
 			</instance>
 			<instance id="14">
-				<location x="24.444" y="98.0" z="40"/>
+				<location x="124.444" y="198.0" z="80"/>
 			</instance>
 			<instance id="15">
-				<location x="24.444" y="122.0" z="40"/>
+				<location x="124.444" y="222.0" z="80"/>
 			</instance>
 			<instance id="16">
-				<location x="24.444" y="147.0" z="40"/>
+				<location x="124.444" y="247.0" z="80"/>
 			</instance>
 			<instance id="17">
-				<location x="24.444" y="171.0" z="40"/>
+				<location x="124.444" y="271.0" z="80"/>
 			</instance>
 			<instance id="18">
-				<location x="24.444" y="196.0" z="40"/>
+				<location x="124.444" y="296.0" z="80"/>
 			</instance>
 			<instance id="19">
-				<location x="24.444" y="220.0" z="40"/>
+				<location x="124.444" y="320.0" z="80"/>
 			</instance>
 			<instance id="20">
-				<location x="48.889" y="0.0" z="40"/>
+				<location x="148.889" y="100.0" z="80"/>
 			</instance>
 			<instance id="21">
-				<location x="48.889" y="24.0" z="40"/>
+				<location x="148.889" y="124.0" z="80"/>
 			</instance>
 			<instance id="22">
-				<location x="48.889" y="49.0" z="40"/>
+				<location x="148.889" y="149.0" z="80"/>
 			</instance>
 			<instance id="23">
-				<location x="48.889" y="73.0" z="40"/>
+				<location x="148.889" y="173.0" z="80"/>
 			</instance>
 			<instance id="24">
-				<location x="48.889" y="98.0" z="40"/>
+				<location x="148.889" y="198.0" z="80"/>
 			</instance>
 			<instance id="25">
-				<location x="48.889" y="122.0" z="40"/>
+				<location x="148.889" y="222.0" z="80"/>
 			</instance>
 			<instance id="26">
-				<location x="48.889" y="147.0" z="40"/>
+				<location x="148.889" y="247.0" z="80"/>
 			</instance>
 			<instance id="27">
-				<location x="48.889" y="171.0" z="40"/>
+				<location x="148.889" y="271.0" z="80"/>
 			</instance>
 			<instance id="28">
-				<location x="48.889" y="196.0" z="40"/>
+				<location x="148.889" y="296.0" z="80"/>
 			</instance>
 			<instance id="29">
-				<location x="48.889" y="220.0" z="40"/>
+				<location x="148.889" y="320.0" z="80"/>
 			</instance>
 			<instance id="30">
-				<location x="73.333" y="0.0" z="40"/>
+				<location x="173.333" y="100.0" z="80"/>
 			</instance>
 			<instance id="31">
-				<location x="73.333" y="24.0" z="40"/>
+				<location x="173.333" y="124.0" z="80"/>
 			</instance>
 			<instance id="32">
-				<location x="73.333" y="49.0" z="40"/>
+				<location x="173.333" y="149.0" z="80"/>
 			</instance>
 			<instance id="33">
-				<location x="73.333" y="73.0" z="40"/>
+				<location x="173.333" y="173.0" z="80"/>
 			</instance>
 			<instance id="34">
-				<location x="73.333" y="98.0" z="40"/>
+				<location x="173.333" y="198.0" z="80"/>
 			</instance>
 			<instance id="35">
-				<location x="73.333" y="122.0" z="40"/>
+				<location x="173.333" y="222.0" z="80"/>
 			</instance>
 			<instance id="36">
-				<location x="73.333" y="147.0" z="40"/>
+				<location x="173.333" y="247.0" z="80"/>
 			</instance>
 			<instance id="37">
-				<location x="73.333" y="171.0" z="40"/>
+				<location x="173.333" y="271.0" z="80"/>
 			</instance>
 			<instance id="38">
-				<location x="73.333" y="196.0" z="40"/>
+				<location x="173.333" y="296.0" z="80"/>
 			</instance>
 			<instance id="39">
-				<location x="73.333" y="220.0" z="40"/>
+				<location x="173.333" y="320.0" z="80"/>
 			</instance>
 			<instance id="40">
-				<location x="97.778" y="0.0" z="40"/>
+				<location x="197.778" y="100.0" z="80"/>
 			</instance>
 			<instance id="41">
-				<location x="97.778" y="24.0" z="40"/>
+				<location x="197.778" y="124.0" z="80"/>
 			</instance>
 			<instance id="42">
-				<location x="97.778" y="49.0" z="40"/>
+				<location x="197.778" y="149.0" z="80"/>
 			</instance>
 			<instance id="43">
-				<location x="97.778" y="73.0" z="40"/>
+				<location x="197.778" y="173.0" z="80"/>
 			</instance>
 			<instance id="44">
-				<location x="97.778" y="98.0" z="40"/>
+				<location x="197.778" y="198.0" z="80"/>
 			</instance>
 			<instance id="45">
-				<location x="97.778" y="122.0" z="40"/>
+				<location x="197.778" y="222.0" z="80"/>
 			</instance>
 			<instance id="46">
-				<location x="97.778" y="147.0" z="40"/>
+				<location x="197.778" y="247.0" z="80"/>
 			</instance>
 			<instance id="47">
-				<location x="97.778" y="171.0" z="40"/>
+				<location x="197.778" y="271.0" z="80"/>
 			</instance>
 			<instance id="48">
-				<location x="97.778" y="196.0" z="40"/>
+				<location x="197.778" y="296.0" z="80"/>
 			</instance>
 			<instance id="49">
-				<location x="97.778" y="220.0" z="40"/>
+				<location x="197.778" y="320.0" z="80"/>
 			</instance>
 			<instance id="50">
-				<location x="122.222" y="0.0" z="40"/>
+				<location x="222.222" y="100.0" z="80"/>
 			</instance>
 			<instance id="51">
-				<location x="122.222" y="24.0" z="40"/>
+				<location x="222.222" y="124.0" z="80"/>
 			</instance>
 			<instance id="52">
-				<location x="122.222" y="49.0" z="40"/>
+				<location x="222.222" y="149.0" z="80"/>
 			</instance>
 			<instance id="53">
-				<location x="122.222" y="73.0" z="40"/>
+				<location x="222.222" y="173.0" z="80"/>
 			</instance>
 			<instance id="54">
-				<location x="122.222" y="98.0" z="40"/>
+				<location x="222.222" y="198.0" z="80"/>
 			</instance>
 			<instance id="55">
-				<location x="122.222" y="122.0" z="40"/>
+				<location x="222.222" y="222.0" z="80"/>
 			</instance>
 			<instance id="56">
-				<location x="122.222" y="147.0" z="40"/>
+				<location x="222.222" y="247.0" z="80"/>
 			</instance>
 			<instance id="57">
-				<location x="122.222" y="171.0" z="40"/>
+				<location x="222.222" y="271.0" z="80"/>
 			</instance>
 			<instance id="58">
-				<location x="122.222" y="196.0" z="40"/>
+				<location x="222.222" y="296.0" z="80"/>
 			</instance>
 			<instance id="59">
-				<location x="122.222" y="220.0" z="40"/>
+				<location x="222.222" y="320.0" z="80"/>
 			</instance>
 			<instance id="60">
-				<location x="146.667" y="0.0" z="40"/>
+				<location x="246.667" y="100.0" z="80"/>
 			</instance>
 			<instance id="61">
-				<location x="146.667" y="24.0" z="40"/>
+				<location x="246.667" y="124.0" z="80"/>
 			</instance>
 			<instance id="62">
-				<location x="146.667" y="49.0" z="40"/>
+				<location x="246.667" y="149.0" z="80"/>
 			</instance>
 			<instance id="63">
-				<location x="146.667" y="73.0" z="40"/>
+				<location x="246.667" y="173.0" z="80"/>
 			</instance>
 			<instance id="64">
-				<location x="146.667" y="98.0" z="40"/>
+				<location x="246.667" y="198.0" z="80"/>
 			</instance>
 			<instance id="65">
-				<location x="146.667" y="122.0" z="40"/>
+				<location x="246.667" y="222.0" z="80"/>
 			</instance>
 			<instance id="66">
-				<location x="146.667" y="147.0" z="40"/>
+				<location x="246.667" y="247.0" z="80"/>
 			</instance>
 			<instance id="67">
-				<location x="146.667" y="171.0" z="40"/>
+				<location x="246.667" y="271.0" z="80"/>
 			</instance>
 			<instance id="68">
-				<location x="146.667" y="196.0" z="40"/>
+				<location x="246.667" y="296.0" z="80"/>
 			</instance>
 			<instance id="69">
-				<location x="146.667" y="220.0" z="40"/>
+				<location x="246.667" y="320.0" z="80"/>
 			</instance>
 			<instance id="70">
-				<location x="171.111" y="0.0" z="40"/>
+				<location x="271.111" y="100.0" z="80"/>
 			</instance>
 			<instance id="71">
-				<location x="171.111" y="24.0" z="40"/>
+				<location x="271.111" y="124.0" z="80"/>
 			</instance>
 			<instance id="72">
-				<location x="171.111" y="49.0" z="40"/>
+				<location x="271.111" y="149.0" z="80"/>
 			</instance>
 			<instance id="73">
-				<location x="171.111" y="73.0" z="40"/>
+				<location x="271.111" y="173.0" z="80"/>
 			</instance>
 			<instance id="74">
-				<location x="171.111" y="98.0" z="40"/>
+				<location x="271.111" y="198.0" z="80"/>
 			</instance>
 			<instance id="75">
-				<location x="171.111" y="122.0" z="40"/>
+				<location x="271.111" y="222.0" z="80"/>
 			</instance>
 			<instance id="76">
-				<location x="171.111" y="147.0" z="40"/>
+				<location x="271.111" y="247.0" z="80"/>
 			</instance>
 			<instance id="77">
-				<location x="171.111" y="171.0" z="40"/>
+				<location x="271.111" y="271.0" z="80"/>
 			</instance>
 			<instance id="78">
-				<location x="171.111" y="196.0" z="40"/>
+				<location x="271.111" y="296.0" z="80"/>
 			</instance>
 			<instance id="79">
-				<location x="171.111" y="220.0" z="40"/>
+				<location x="271.111" y="320.0" z="80"/>
 			</instance>
 			<instance id="80">
-				<location x="195.556" y="0.0" z="40"/>
+				<location x="295.556" y="100.0" z="80"/>
 			</instance>
 			<instance id="81">
-				<location x="195.556" y="24.0" z="40"/>
+				<location x="295.556" y="124.0" z="80"/>
 			</instance>
 			<instance id="82">
-				<location x="195.556" y="49.0" z="40"/>
+				<location x="295.556" y="149.0" z="80"/>
 			</instance>
 			<instance id="83">
-				<location x="195.556" y="73.0" z="40"/>
+				<location x="295.556" y="173.0" z="80"/>
 			</instance>
 			<instance id="84">
-				<location x="195.556" y="98.0" z="40"/>
+				<location x="295.556" y="198.0" z="80"/>
 			</instance>
 			<instance id="85">
-				<location x="195.556" y="122.0" z="40"/>
+				<location x="295.556" y="222.0" z="80"/>
 			</instance>
 			<instance id="86">
-				<location x="195.556" y="147.0" z="40"/>
+				<location x="295.556" y="247.0" z="80"/>
 			</instance>
 			<instance id="87">
-				<location x="195.556" y="171.0" z="40"/>
+				<location x="295.556" y="271.0" z="80"/>
 			</instance>
 			<instance id="88">
-				<location x="195.556" y="196.0" z="40"/>
+				<location x="295.556" y="296.0" z="80"/>
 			</instance>
 			<instance id="89">
-				<location x="195.556" y="220.0" z="40"/>
+				<location x="295.556" y="320.0" z="80"/>
 			</instance>
 			<instance id="90">
-				<location x="220.0" y="0.0" z="40"/>
+				<location x="320.0" y="100.0" z="80"/>
 			</instance>
 			<instance id="91">
-				<location x="220.0" y="24.0" z="40"/>
+				<location x="320.0" y="124.0" z="80"/>
 			</instance>
 			<instance id="92">
-				<location x="220.0" y="49.0" z="40"/>
+				<location x="320.0" y="149.0" z="80"/>
 			</instance>
 			<instance id="93">
-				<location x="220.0" y="73.0" z="40"/>
+				<location x="320.0" y="173.0" z="80"/>
 			</instance>
 			<instance id="94">
-				<location x="220.0" y="98.0" z="40"/>
+				<location x="320.0" y="198.0" z="80"/>
 			</instance>
 			<instance id="95">
-				<location x="220.0" y="122.0" z="40"/>
+				<location x="320.0" y="222.0" z="80"/>
 			</instance>
 			<instance id="96">
-				<location x="220.0" y="147.0" z="40"/>
+				<location x="320.0" y="247.0" z="80"/>
 			</instance>
 			<instance id="97">
-				<location x="220.0" y="171.0" z="40"/>
+				<location x="320.0" y="271.0" z="80"/>
 			</instance>
 			<instance id="98">
-				<location x="220.0" y="196.0" z="40"/>
+				<location x="320.0" y="296.0" z="80"/>
 			</instance>
 			<instance id="99">
-				<location x="220.0" y="220.0" z="40"/>
+				<location x="320.0" y="320.0" z="80"/>
 			</instance>
 		</population>
 
