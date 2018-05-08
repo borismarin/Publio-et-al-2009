@@ -6397,7 +6397,7 @@
 			<electricalConnectionInstance id="9" preCell="../cones/14/cone" postCell="../rods/1326/rod" synapse="cone_rod_gap"/>
 		</electricalProjection>
 
-		<continuousProjection id ="rods_rod_bipolars_graded" presynapticPopulation="rods" postsynapticPopulation="rod_bipolars_pop">
+		<continuousProjection id ="rods_rod_bipolars_graded" presynapticPopulation="rods_pop" postsynapticPopulation="rod_bipolars_pop">
 			<continuousConnectionInstance id="0" preCell="../rods/0/rod" postCell="../rod_bipolars_pop/15/rod_bipolar" preComponent="silent" postComponent="invGraded"/>
 			<continuousConnectionInstance id="1" preCell="../rods/0/rod" postCell="../rod_bipolars_pop/46/rod_bipolar" preComponent="silent" postComponent="invGraded"/>
 			<continuousConnectionInstance id="2" preCell="../rods/1/rod" postCell="../rod_bipolars_pop/94/rod_bipolar" preComponent="silent" postComponent="invGraded"/>
